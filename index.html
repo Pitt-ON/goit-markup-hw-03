@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title lang="en">WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    <!-- Modern-normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <!-- Шапка сайта -->
 <body>
-        <!-- Верхня лінія -->
+    <!-- Верхня лінія -->
     <header class="page-header">
         <!-- Навигация по странице -->
+        <div class="container">
+        <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span class="logo-header">Studio</span></a>
         <nav class="page-header-nav">
-            <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span class="logo-header">Studio</span></a>
-            <!-- Список навігаціі по сайту -->
+        <!-- Список навігаціі по сайту -->
             <ul class="site-nav list">
                 <li><a class="site-nav-link link current " href="./index.html">Студія</a></li>
                 <li><a class="site-nav-link link" href="./portfolio.html">Портфоліо</a></li>
@@ -32,17 +34,21 @@
             <li><a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <!-- Уникальный контент сайта -->
     <main>
         <!-- Шапка -->
         <section class="head">
+            <div class="container">
             <h1 class="head-title">Ефективні рішення для<br>вашого бізнесу</h1>
             <button class="head-button" type="button">Замовити послугу</button>
+            </div>
         </section>
 
         <!-- Особливості -->
         <section class="features">
+            <div class="container">
             <h2 hidden class="features-title">Особливості</h2>
             <ul class="features-list list">
                 <li class="features-item">
@@ -61,11 +67,13 @@
                     <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
-            </ul>
+            </ul>    
+            </div>            
         </section>
 
         <!-- Чим ми займаємось -->
         <section class="services">
+            <div class="container">
             <h2 class="services-title">Чим ми займаємося</h2>
             <ul class="services-list list">
                 <li class="services-item">
@@ -78,11 +86,12 @@
                     <img class="services-picture" src="./images/box/tablet.jpg" alt="робота з колоризатором" width="370">
                 </li>
             </ul>
-
+            </div>
         </section>
 
         <!-- Наша команда -->            
             <section class="team">
+                <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-item">
@@ -106,11 +115,13 @@
                         <p class="team-profession" lang="en">UI Designer</p>
                     </li>
                 </ul>
+                </div>
             </section>        
     </main>
 
     <!-- Футер -->
     <footer class="page-footer">
+        <div class="container">
         <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span class="logo-footer">Studio</span></a>
         <address class="footer-contacts">
             <p class="footer-contacts-text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -118,7 +129,8 @@
                 <li><a class="footer-contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="footer-contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </address>        
+        </address>
+        </div>
     </footer>
 </body>
 </html>

@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <title lang="en">Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
-        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+    <!-- Modern-normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -18,32 +19,35 @@
     <!-- Верхня лінія -->
     <header class="page-header">
         <!-- Навигация по странице -->
-        <nav class="page-header-nav">
-            <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span class="logo-header">Studio</span></a>
-            <!-- Список навігаціі по сайту -->
-            <ul class="site-nav list">
-                <li><a class="site-nav-link link" href="./index.html">Студія</a></li>
-                <li><a class="site-nav-link link current" href="./portfolio.html">Портфоліо</a></li>
-                <li><a class="site-nav-link link" href="">Контакти</a></li>                
+        <div class="container">
+            <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span
+                    class="logo-header">Studio</span></a>
+            <nav class="page-header-nav">
+                <!-- Список навігаціі по сайту -->
+                <ul class="site-nav list">
+                    <li><a class="site-nav-link link" href="./index.html">Студія</a></li>
+                    <li><a class="site-nav-link link current" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="site-nav-link link" href="">Контакти</a></li>
+                </ul>
+            </nav>
+            <!-- Контакти -->
+            <ul class="header-contacts list">
+                <li><a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <!-- Контакти -->
-        <ul class="header-contacts list">
-            <li><a class="header-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <section class="portfolio">
             <h1 hidden class="filters-title">Портфоліо</h1>
-            <ul class="filters-list list">
+            <ul class="filters-list list container">
                 <li><button class="filters-button current" type="button">Усі</button></li>
                 <li><button class="filters-button" type="button">Веб-сайти</button></li>
                 <li><button class="filters-button" type="button">Додатки</button></li>
                 <li><button class="filters-button" type="button">Дизайн</button></li>
                 <li><button class="filters-button" type="button">Маркетинг</button></li>
             </ul>
-            <ul class="portfolio-list list">
+            <ul class="portfolio-list list container">
                 <li class="portfolio-item">
                     <img class="portfolio-picture" src="./images/portfolio/img-1.jpg" alt="три фото представників компаніі" width="370">
                     <h2 class="portfolio-title">Технокряк</h2>
@@ -94,14 +98,17 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-        <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span class="logo-footer">Studio</span></a>
-        <address class="footer-contacts">
-            <p class="footer-contacts-text">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="footer-contacts-list list">
-                <li><a class="footer-contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="footer-contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logo link" href="./index.html" target="_blank" rel="noreferrer noopener" lang="en">Web<span
+                    class="logo-footer">Studio</span></a>
+            <address class="footer-contacts">
+                <p class="footer-contacts-text">м. Київ, пр-т Лесі Українки, 26</p>
+                <ul class="footer-contacts-list list">
+                    <li><a class="footer-contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="footer-contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
