@@ -46,7 +46,11 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6, 
+p {
     margin: 0;
 }
 
@@ -60,6 +64,10 @@ img {
     padding-right: 15px;
     margin: 0 auto;
     outline: 2 solid tomato;
+}
+
+.section {
+    padding: 94px;
 }
 
 /* Header */
@@ -90,8 +98,6 @@ img {
 }
 
 /* Site nav */
-
-
 
 .site-nav-link {
     font-weight: 500;
@@ -126,6 +132,7 @@ img {
 /* Head */
 .head {
     text-align: center;
+    padding: 200px;
 }
 
 .head,
@@ -140,6 +147,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;    
     color: var(--light-txt-cl);
+    margin-bottom: 30px;
 }
 
 .head-button {
@@ -149,14 +157,15 @@ img {
     border: 0;
     cursor: pointer;
     padding: 10px 32px;
-    /* outline: none; */
+    /* margin-bottom: 200px; */
+    outline: none;
 
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);    
     /* display: flex;
     align-items: center; */
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;    
     color: var(--light-txt-cl);
 }
@@ -168,7 +177,12 @@ img {
 
 /* Features */
 
+.features {
+    padding-top: 94px;
+}
+
 .features-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -187,6 +201,7 @@ img {
 /* Services */
 
 .services-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -202,6 +217,7 @@ img {
 }
 
 .team-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -217,6 +233,7 @@ img {
 }
 
 .team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);    
@@ -259,6 +276,10 @@ img {
 }
 
 /* Portfolio.html */
+
+.filters-list {
+    margin-bottom: 34px;
+}
 
 .filters-button {
     font-family: inherit;
